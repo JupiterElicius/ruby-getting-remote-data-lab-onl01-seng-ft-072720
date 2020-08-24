@@ -4,9 +4,10 @@ require 'open-uri'
 require 'json'
 
 class GetRequester
+  attr_accessor :url
   
-  def initialize(urlstring)
-    url = "#{urlstring}"
+  def initialize(url)
+    @url = "#{urlstring}"
   end
   
   def get_response_body
