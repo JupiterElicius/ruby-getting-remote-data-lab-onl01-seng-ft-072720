@@ -6,7 +6,7 @@ require 'json'
 class GetRequester
   
   def initialize(urlstring)
-    URL = "#{urlstring}"
+    url = "#{urlstring}"
   end
   
   def get_response_body
